@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>登陆</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/lib/login.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/blogsheet.css">
+    <script src="../static/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/lib/jquery.url.js"></script>
+    <script src="../static/js/blog.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../static/css/clean-blog.min.css" rel="stylesheet">
+    <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4 col-md-8 mx-auto">
+            <form name="sentMessage" id="login-form" method="post" novalidate>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>用户名</label>
+                        <input type="text" class="form-control" name="username" placeholder="用户名">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="form-group floating-label-form-group controls">
+                        <label>密码</label>
+                        <input type="password" class="form-control" id="login-password" name="password" placeholder="密码">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <button type="submit" class="btn btn-primary" id="login-button">登陆</button>
+
+            </form>
+            <a href="/register">注册一个新账号</a>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="../static/js/jqBootstrapValidation.js"></script>
+<script src="../static/js/contact_me.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="../static/js/clean-blog.min.js"></script>
+</body>
+</html>

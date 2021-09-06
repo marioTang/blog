@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相册</title>
+    <link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/clean-blog.min.css" rel="stylesheet">
+    <script src="../static/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="../static/js/lib/jquery.url.js"></script>
+    <script src="../static/js/blog.js"></script>
+    <link href="../static/css/blogsheet.css" rel="stylesheet">
+</head>
+<body>
+{{template "block/nav2.html" .}}
+
+<div id="main">
+
+    <div>
+        {{range .Album}}
+            <div class="album-item" style='background-image: url("{{.Filepath}}");'></div>
+        {{end}}
+
+        {{if .IsLogin}}
+            <form method="post">
+                <input type="file" id="album-upload-file" class="btn btn-secondary" name="upload">
+                <input type="button" class="btn btn-primary" id="album-upload-button" value="提交文件">
+            </form>
+
+        {{else}}
+
+        {{end}}
+
+</div>
+
+
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/clean-blog.min.js"></script>
+</body>
+</html>
